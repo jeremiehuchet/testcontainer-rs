@@ -1,0 +1,19 @@
+[package]
+name = "testcontainers"
+version = "0.1.0"
+authors = ["Jeremie Huchet"]
+description = "A library to create and run containers for tests purposes"
+license = "GPL-3.0"
+edition = "2021"
+
+[dependencies]
+docker-api = "0.14"
+futures-util = "0.3"
+log = "0.4"
+parse_duration = "2.1"
+regex = "1.9"
+tokio = "1.31"
+
+[dev-dependencies]
+tokio = { version = "1.31", features = ["macros"] }
+tokio-postgres = "0.7"
